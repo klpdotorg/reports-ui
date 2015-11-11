@@ -1,0 +1,48 @@
+.top-band {
+	border-top: 5px solid;
+}
+
+.flap-right {
+	float: right;
+	border-radius: 0 0 5px 5px;
+	width: 200px;
+	height: 35px;
+	padding-top: 5px;
+}
+
+.rounded-sect {
+	border-radius: 10px;
+	padding-top: 10px;
+}
+
+.date-header {
+	padding-top: 20px;
+	padding-left: 100px;
+}
+
+@include media-med {
+
+	.sect-parent {
+	  @include grid-parent;
+	}
+
+	.sect-half {
+	  @include col-50-flt;
+	}
+
+	.sect-third {
+		 @include col-33-flt;
+	}
+
+	.sect-two-third {
+		 @include col-66-flt;
+	}
+
+	.sect-quarter {
+		@include col-25-flt;
+	}
+
+	.sect-three-quarter {
+		@include col-75-flt;
+	}
+}
