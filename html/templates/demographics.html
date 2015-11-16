@@ -16,6 +16,7 @@
 
   </head>
   <body>
+  <div class="container"><!--outer-->
     <!-- Summary section -->
     <div id="summary" class="container">
 
@@ -38,18 +39,17 @@
           <h2 class="heading-secondary brand-blue align-left">PC MOHAN (BJP)</h2>
         </div><!--sect-third-->
         <div class="sect-two-third grey-mist-bg rounded-sect">
-          <div class="container sect-parent">
+          <div class="sect-parent">
               <div class="sect-half">
                 <div class="heading-tiny-uppercase">Schools</div>
-                <h2 class="heading-secondary brand-blue align-left">314</h2> 
+                <h2 class="heading-secondary black align-left">314</h2> 
                 <div class="heading-tiny-uppercase">Teachers</div>
-                <h2 class="heading-secondary brand-blue align-left">314</h2> 
+                <h2 class="heading-secondary black align-left">2000</h2> 
                 <div class="heading-tiny-uppercase">Pupil-to-Teacher Ratio</div>
-                <h2 class="heading-secondary brand-blue align-left">2000</h2>
-              </div><!--half-->
+                <div class="align-left"> <span class="heading-secondary black"> 20:1 > <span class="brand-green"> 35:1 </span></span>  <span class="heading-tiny brand-green">(Recommended)</span></div>
+              </div>
               <div class="sect-half">
-                  
-                  <div class="heading-tiny-uppercase">Students</div>
+                <div class="heading-tiny-uppercase">Students</div>
                   <div class="module-stats-icon module-stats-boygirl"><!--1-->
                       <span class="icon-boy-girl"></span>
                       <div class="module-stats-info"><!--2-->
@@ -59,26 +59,21 @@
                   </div><!--1-->
 
                   <div class="heading-tiny-uppercase">Gender Profile</div>
-                  <div class="float-left"><!--1-->
-                      <div class="module-stats-icon module-stats-girl"><!--2-->
-                            <span class="icon-girl"></span>
-                            <div class="module-stats-info"><!--3-->
-                                <div class="uppercase">Girls</div>
-                                <p class="module-stats-label">23118</p>
-                            </div><!--3-->
-                            
-                      </div><!--2-->
-
-                      <div class="module-stats-icon"><!--4-->
-                          <span class="icon-boy"></span>
-                          <div class="module-stats-info"><!--5-->
-                              <div class="uppercase">Boys</div>
-                              <p class="module-stats-label">24027</p>
-                          </div><!--5-->
-                      </div><!--4-->
-                  <div><!--1-->
-
-                  <div class="bar-graph-wrap"><!--1-->
+                  <div class="module-stats-icon module-stats-girl"><!--2-->
+                      <span class="icon-girl"></span>
+                      <div class="module-stats-info"><!--3-->
+                          <div class="uppercase">Girls</div>
+                          <p class="module-stats-label">23118</p>
+                      </div><!--3-->          
+                  </div><!--2-->    
+                  <div class="module-stats-icon"><!--4-->
+                      <span class="icon-boy"></span>
+                      <div class="module-stats-info"><!--5-->
+                          <div class="uppercase">Boys</div>
+                          <p class="module-stats-label">24027</p>
+                      </div><!--5-->
+                  </div><!--4-->   
+                  <div class="bar-graph-wrap "><!--1-->
                       <div class="bar-graph"><!--2-->
                           <div class="clear-fix"><!--3-->
                               <div class="float-left pink-salmon">49%</div>
@@ -90,26 +85,82 @@
                               </div><!--5-->
                           </div><!--4-->     
                       </div> <!-- /bar-graph --><!--2-->
-                  </div> <!-- /bar-graph-wrap --><!--1-->
-
-
-              </div><!--half-->
-          </div><!--sect-parent-->
+                  </div> <!-- /bar-graph-wrap --><!--1-->          
+              </div>
+          </div><!-- inner sect-parent-->
         </div><!--sect-two-third-->
       </div><!--sect-parent-->
-    </div><!--container -->
-    <!-- WTH am I closing here?-->
-    </div>
-    </div>
-    <!-- END WTH am I closing here?-->
-    <!--Category Section -->
+    </div><!--summary container -->
     <div id="category" class="container">
-      
-      <div class="base-spacing-mid"></div>
-      <hr/>
-       
-      <h2 class="heading-border brand-turquoise">School Category Profile</h2>
-    </div><!--container-->
+        <div class="base-spacing-sm"></div>
+        <hr/>
+        <h2 class="heading-border brand-turquoise">School Category Profile</h2>
+        <div class="sect-parent">
+          <div class="sect-three-quarter rounded-sect">
+            <div class="sect-parent">
+              <div class="sect-half">
+                <div class="heading-tiny-uppercase">School Distribution by Category</div>
+                <div class="bar-graph-wrap float-left"><!--1-->
+                  <div class="bar-num-label brand-blue">146/314</div>
+                  <div class="bar-custom tooltip" aria-label="146 Schools"><!--2-->
+                    <div class="bar-value brand-orange-bg float-left" style="width:46.5%;"></div><!--3-->
+                  </div><!--2-->
+                  <div class="bar-percent grey-gravel">46.5%</div><!--6-->
+                </div><!--1-->
+                <div class="bar-graph-wrap float-left"><!--1-->
+                  <div class="bar-num-label brand-blue">42/314</div>
+                  <div class="bar-custom tooltip" aria-label="42 Schools"><!--2-->
+                    <div class="bar-value grey-gravel-bg float-left" style="width:13.4%;"></div><!--3-->
+                  </div><!--2-->
+                  <div class="bar-percent grey-gravel">13.4%</div><!--6-->
+                </div><!--1-->
+                <div class="bar-graph-wrap float-left"><!--1-->
+                  <div class="bar-num-label brand-blue">126/314</div>
+                  <div class="bar-custom tooltip" aria-label="126 Schools"><!--2-->
+                    <div class="bar-value grey-gravel-bg float-left" style="width:40.1%;"></div><!--3-->
+                  </div><!--2-->
+                  <div class="bar-percent grey-gravel">40.1%</div><!--6-->
+                </div><!--1-->
 
+              </div><!--sect-half-->
+              <div class="sect-half">
+                <div class="heading-tiny-uppercase">Average Enrollment by Category</div>
+                <div class="sect-parent">
+                  <div class="sect-two-third">
+                    <div class="bar-lookup">Lower Primary</div>
+                    <div class="bar-lookup">Upper Primary</div>
+                    <div class="bar-lookup">Model Primary</div>
+                  </div>
+                  <div class="sect-third">
+                    <div class="bar-lookup">78</div>
+                    <div class="bar-lookup">178</div>
+                    <div class="bar-lookup">315</div>
+                  </div>
+                </div>
+                
+              </div><!--sect-half-->
+            </div><!-- inner sect-parent-->
+          </div><!--sect-three-quarter-->
+          <div class="sect-quarter grey-mist-bg rounded-sect">
+            <div class="heading-tiny-uppercase">Total Enrollment</div>
+            <div class="base-spacing-sm"></div>
+            <div class="heading-tiny bold">Classes 1,2,3 and 4</div>
+            <div class="brand-blue">30000</div>
+            <div class="base-spacing-sm"></div>
+            <div class="heading-tiny bold">Classes 5,6,7 and 8</div>
+            <div class="brand-blue"> 17145</div>
+            <div class="base-spacing-sm"></div>           
+          </div><!--sect-quarter-->
+      </div><!--sect-parent-->
+    </div><!-- category container-->
+    <div id="language" class="container">
+      <div class="base-spacing-sm"></div>
+      <hr/>
+      <h2 class="heading-border brand-turquoise">Language Profile</h2>
+        <div class="sect-parent">
+        </div>
+      
+    </div>
+  </div> <!-- outer container -->
   </body>
 </html>

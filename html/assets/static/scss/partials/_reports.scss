@@ -20,6 +20,24 @@
 	padding-left: 100px;
 }
 
+.bar-num-label{
+	display: inline;
+	float: right;
+	padding: 0 $base-spacing-sm;
+	text-align: right;
+	@extend %font-small;
+	@extend %bold;
+	margin-top:3px;
+}
+
+
+.bar-lookup {
+	margin-bottom: 18px;
+	margin-top:3px;
+	@extend %font-small;
+	@extend %bold;
+}
+
 @include media-med {
 
 	.sect-parent {
