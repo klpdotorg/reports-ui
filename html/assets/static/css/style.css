@@ -4774,13 +4774,35 @@ code {
   float: right;
   padding: 0 5px;
   text-align: right;
-  margin-top: 3px;
-  font-color: #898989; }
-
-.bar-lookup {
-  margin-bottom: 18px;
   margin-top: 3px; }
 
+@media only screen and (max-width: 749px) {
+  .bar-num-label {
+    display: block;
+    float: right;
+    text-align: left; } }
+.bar-lookup {
+  margin-bottom: 15px;
+  margin-top: 3px; }
+
+.table-base-comparison th, .table-base-comparison td {
+  width: 120px; }
+
+@media only screen and (max-width: 749px) {
+  .td-label-enrolu:before {
+    content: "Average Enrollment - Upper Primary: "; }
+
+  .td-label-enroll:before {
+    content: "Average Enrollment - Lower Primary: "; }
+
+  .td-label-ptr:before {
+    content: "PTR: "; }
+
+  .td-label-year:before {
+    content: "Year: "; }
+
+  .td-label-boundary:before {
+    content: "Boundary: "; } }
 @media only screen and (min-width: 750px) {
   .sect-parent {
     margin-left: -20px;

@@ -30,30 +30,73 @@
 	margin-top:3px;
 }
 
+@include media-med-maxwidth {
+	.bar-num-label {
+		display:block;
+		float:right;
+		text-align:left;
+	}
+}
 
 .bar-lookup {
-	margin-bottom: 18px;
+	margin-bottom: 15px;
 	margin-top:3px;
 	@extend %font-small;
 	@extend %bold;
 }
 
+.table-base-comparison th,.table-base-comparison td {
+    width: 120px;
+ }
+
+@include media-med-maxwidth {	
+	.td-label-enrolu {
+	    &:before {
+	  	  content: "Average Enrollment - Upper Primary: ";
+	  	}
+	}
+
+	.td-label-enroll {
+	    &:before {
+	  	  content: "Average Enrollment - Lower Primary: ";
+	  	}
+	}
+
+	.td-label-ptr {
+	    &:before {
+	  	  content: "PTR: ";
+	  	}
+	}
+
+	.td-label-year {
+	    &:before {
+	  	  content: "Year: ";
+	  	}
+	}
+
+	.td-label-boundary {
+	    &:before {
+	  	  content: "Boundary: ";
+	  	}
+	}
+}
+
 @include media-med {
 
 	.sect-parent {
-	  @include grid-parent;
+	  	@include grid-parent;
 	}
 
 	.sect-half {
-	  @include col-50-flt;
+	  	@include col-50-flt;
 	}
 
 	.sect-third {
-		 @include col-33-flt;
+		@include col-33-flt;
 	}
 
 	.sect-two-third {
-		 @include col-66-flt;
+		@include col-66-flt;
 	}
 
 	.sect-quarter {
@@ -64,3 +107,23 @@
 		@include col-75-flt;
 	}
 }
+
+$ct-series-colors: (
+  $brand-red,
+  $grey-gravel,
+  $brand-purple,
+  $brand-green,
+  $brand-blue,
+  $brand-orange,
+  $green-leaf,
+  $orange-mild,
+  $pink-salmon,
+  $brand-turquoise,
+  $red-mild,
+  $maroon,
+  $yellow-mild,
+  $green-pista,
+  $blue-ink,
+  $blue-sky,
+  $purple-amethyst
+) !default;
